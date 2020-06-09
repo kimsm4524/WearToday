@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zbackc"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/zlogin_logo" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:id="@+id/IDtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/user"
+            android:fontFamily="@font/binggrae"
+            android:hint="   Username"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#cccccc">
+
+        <EditText
+            android:id="@+id/PASStext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ffff"
+            android:drawableLeft="@drawable/zlock"
+            android:fontFamily="@font/binggrae"
+            android:hint="   Passwoard"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/LOGINb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="@font/binggrae2"
+            android:text="Log In"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/SIGNUPb"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:fontFamily="@font/binggrae2"
+            android:text="Sign up"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
